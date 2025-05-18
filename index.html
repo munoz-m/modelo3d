@@ -1,30 +1,82 @@
-<!SDOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta http-equiv='X-UA-Compatible' content='chrome=1'></meta>
-<meta http-equiv='Content-Type' content='text/html;charset=utf-8'></meta>
-<title>M2_T5</title>
-<script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
-<link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica M2_T5</title>
+  <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://www.x3dom.org/download/x3dom.css"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    main {
+      max-width: 900px;
+      padding: 2rem;
+    }
+
+    x3d {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin-top: 1rem;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-<h1>Mummy Mask</h1>
-<p>
-    JMM_Mayo_2025
-</p>
-<x3d width='800px' height='800px'>
-<scene>
-<Viewpoint position="14.55812 -1.72535 2.99607" orientation="0.38141 0.35410 0.85390 1.81506" 
-	 centerOfRotation="2.08777 -1.81536 -8.06733" fieldOfView="0.78540" description="defaultX3DViewpointNode"></Viewpoint>
+  <header>
+    <h1>Máscara de momia M2_T5</h1>
+  </header>
 
-INFO: 
-<Viewpoint position="14.75682 -1.72391 3.17235" orientation="0.38141 0.35410 0.85390 1.81506" 
-	zNear="8.32153" zFar="28.41971" centerOfRotation="2.08777 -1.81536 -8.06733" fieldOfView="0.78540" description="defaultX3DViewpointNode"></Viewpoint>
-<inline url="https://raw.githubusercontent.com/munoz-m/modelo3d/refs/heads/main/momia%20textura%20voroAtlas3.x3d"> </inline>
-</scene>
-</x3d>
-<p>
-    Práctica realizada por Juan Muñoz Marcos
-</p>
-  </body>
+  <main>
+    <p>Trabajo de digitalización de patrimonio realizado con MeshLab.</p>
+
+    <x3d width="800px" height="800px">
+      <scene>
+        <Viewpoint position="14.55812 -1.72535 2.99607" 
+                   orientation="0.38141 0.35410 0.85390 1.81506"
+                   centerOfRotation="2.08777 -1.81536 -8.06733" 
+                   fieldOfView="0.78540" 
+                   description="Vista principal"></Viewpoint>
+
+        <Viewpoint position="14.75682 -1.72391 3.17235" 
+                   orientation="0.38141 0.35410 0.85390 1.81506"
+                   zNear="8.32153" 
+                   zFar="28.41971" 
+                   centerOfRotation="2.08777 -1.81536 -8.06733" 
+                   fieldOfView="0.78540" 
+                   description="Vista alternativa"></Viewpoint>
+
+        <inline url="https://raw.githubusercontent.com/munoz-m/modelo3d/refs/heads/main/momia%20textura%20voroAtlas3.x3d"></inline>
+      </scene>
+    </x3d>
+
+    <footer>
+      <p>Práctica realizada por Juan Muñoz Marcos</p>
+    </footer>
+  </main>
+</body>
 </html>
